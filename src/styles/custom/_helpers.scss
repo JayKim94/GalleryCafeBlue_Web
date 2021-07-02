@@ -1,0 +1,42 @@
+@mixin translate($trX, $trY) {
+    transform: translate($trX, $trY);
+    -webkit-transform: translate($trX, $trY);
+    -moz-transform: translate($trX, $trY);
+    -ms-transform: translate($trX, $trY);
+    -o-transform: translate($trX, $trY);
+}
+
+@mixin transition($property: all, $duration: 500ms, $timing: ease) {
+    transition: $property $duration $timing;
+    -webkit-transition: $property $duration $timing;
+    -moz-transition: $property $duration $timing;
+    -ms-transition: $property $duration $timing;
+    -o-transition: $property $duration $timing;
+}
+
+@mixin absolute-center($trX: -50%, $trY: -50%) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate($trX, $trY);
+    -webkit-transform: translate($trX, $trY);
+    -moz-transform: translate($trX, $trY);
+    -ms-transform: translate($trX, $trY);
+    -o-transform: translate($trX, $trY);
+}
+
+@mixin image-options {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+@mixin square($size) {
+    width: $size;
+    height: $size;
+}
+
+@mixin elevate-1 {
+    box-shadow: 0 3px 10px #30303030;
+    z-index: 1000;
+}

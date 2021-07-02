@@ -1,0 +1,70 @@
+@mixin font-settings {
+    word-wrap: break-word;
+    text-overflow: clip;
+}
+
+@mixin font-title($color: $white-color) {
+    @include font-settings;
+    font-size: $title-text-size;
+    font-weight: 700;
+    line-height: $line-height-normal;
+    color: $color;
+}
+
+@mixin font-header($color: $white-color) {
+    @include font-settings;
+    font-size: $header-text-size;
+    font-weight: 700;
+    color: $color;
+    text-align: center;
+}
+
+@mixin font-content($color: $white-color) {
+    @include font-settings;
+    font-size: $content-text-size;
+    font-weight: 400;
+    color: $color;
+    line-height: $line-height-high;
+}
+
+@mixin font-menu($color: $white-color) {
+    @include font-settings;
+    font-size: 1rem;
+    font-weight: 700;
+    color: $color;
+    letter-spacing: 1.2px;
+    text-align: center;
+}
+
+@mixin font-bold($color: $white-color) {
+    @include font-settings;
+    font-size: 1.55rem;
+    font-weight: 700;
+    text-align: center;
+    color: $color;
+}
+
+@mixin font-normal($color: $white-color) {
+    @include font-settings;
+    font-size: $content-text-size;
+    font-weight: 300;
+    line-height: $line-height-normal;
+    color: $color;
+}
+
+@mixin font-small($color: $white-color) {
+    @include font-settings;
+    font-size: $content-text-size-mobile;
+    font-weight: 300;
+    line-height: $line-height-low;
+    color: $color;
+}
+
+@mixin font-dense-muted($color: $white-color) {
+    @include font-settings;
+    font-size: .85rem;
+    opacity: 0.85;
+    font-weight: normal;
+    line-height: $line-height-low;
+    color: $color;
+}
